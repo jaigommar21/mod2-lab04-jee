@@ -11,9 +11,11 @@ import javax.servlet.http.HttpServletResponse;
  * Servlet implementation class HelloServlet
  *
  *  http://localhost:8080/mod2-lab04-jee/HelloServlet
+ *  
+ *  http://localhost:8080/mod2-lab04-jee/HolaServlet
  *
  */
-@WebServlet("/HelloServlet")
+@WebServlet("/HolaServlet")
 public class HelloServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
