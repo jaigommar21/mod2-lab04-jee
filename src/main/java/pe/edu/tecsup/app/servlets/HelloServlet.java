@@ -31,9 +31,10 @@ public class HelloServlet extends HttpServlet {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
 		response.getWriter().
+				append("<html>").
 				append("<h2>Hola Mundo</h2>").
-				append("<p>Este es mi primer Servlet</p>");
-	
+				append("<p>Este es mi primer Servlet</p>").
+				append("</html>");
 	}
 
 	/**
