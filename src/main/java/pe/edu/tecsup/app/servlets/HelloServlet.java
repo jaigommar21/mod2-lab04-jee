@@ -31,14 +31,20 @@ public class HelloServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	protected void doGet(HttpServletRequest request /* Lo que viene de la peticion */, 
+						 HttpServletResponse response /* Lo que responde el servlet */ ) 
+		throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
+		String nombre = request.getParameter("nombreX");
+		String apellido = request.getParameter("apellidoX");
+
+		
 		response.getWriter().
 				append("<html>").
 				//append("<h2>Hola Mundo => doGet()</h2>").
-				append("<h2>Hola Mundo</h2>").
+				append("<h2>Hola Mundo => " + nombre + "," + apellido + "</h2>").
 				append("<p>Este es mi primer Servlet</p>").
 				append("</html>");
 	}
