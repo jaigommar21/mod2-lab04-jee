@@ -32,8 +32,6 @@ public class AreaServlet extends HttpServlet {
 		
 		int i_dato = Integer.parseInt(s_dato);
 		
-		
-		
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
