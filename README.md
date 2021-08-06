@@ -1,4 +1,4 @@
- # Proyecto básico de Servlet
+ # Proyecto básico de servlet
  
- - Contenedor : Jakara Tomcat versión 9
+ - Contenedor : Jakarta Tomcat versión 9
  - Java : version 11
